@@ -1,15 +1,28 @@
+import PropTypes from 'prop-types';
+import s from './Statistics.module.css';
+
 export function Stats(props) {
-  const list = props.userStats.map(item => (
-    <li key={item.id} className="item">
-      <span className="label">{item.label}</span>
-      <span className="percentage"> {item.percentage.toString()} %</span>
+  const { userStats } = props;
+  const list = userStats.map(item => (
+    <li key={item.id} className={s.statsItem}>
+      <span className={s.statsLabel}>{item.label}</span>
+      <span className={s.statsPercentage}> {item.percentage.toString()} %</span>
     </li>
   ));
   return (
-    <section className="statistics">
-      <h2 className="title">{props.title}</h2>
+    <section className={s.statistics}>
+      {props.title && (
+        <h2 className={s.statsTitle}>{props.title.toUpperCase()}</h2>
+      )}
 
-      <ul className="stat-list">{list}</ul>
+      <ul className={s.statsList}>{list}</ul>
     </section>
   );
 }
+
+Stats.propTypes = {
+  list: PropTypes.shape({
+    id: PropTypes.string.isRequired,
+  }),
+  title: PropTypes.string,
+};

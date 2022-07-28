@@ -1,0 +1,47 @@
+.transaction {
+  margin: 10px auto;
+  background-color: #fafafa;
+  width: 360px;
+  padding-top: 15px;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 7%);
+  border-collapse: collapse;
+  border-radius: 5px;
+}
+
+.transactionTitle {
+  background-color: rgb(122, 218, 235);
+  color: #fafafa;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.transactionTitle:last-child {
+  border-top-right-radius: 5px;
+}
+
+.transactionTitle:first-child {
+  border-top-left-radius: 5px;
+}
+
+.transactionTitle:not(:last-child) {
+  border-right: 1px solid #e6e5e5;
+}
+
+.transactionValue {
+  font-size: 13px;
+  padding: 15px;
+  color: #888686;
+  text-align: center;
+  border-right: 1px solid #cccccc;
+}
+
+.transactionValueRow:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+.transactionValue::first-letter {
+  text-transform: uppercase;
+}

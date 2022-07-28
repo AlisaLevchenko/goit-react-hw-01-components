@@ -1,0 +1,41 @@
+.friendItem {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  background-color: #fafafa;
+  width: 360px;
+  padding: 5px 0px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 7%);
+}
+
+.friendStatus {
+  display: inline-flex;
+  height: 13px;
+  width: 13px;
+  border-radius: 50%;
+  background-size: contain;
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  margin-left: 20px;
+}
+.friendStatus.onLine {
+  background-color: #6dce76;
+}
+.friendStatus.offLine {
+  background-color: #ff3e25;
+}
+
+.friendAvatar {
+  background-color: rgb(252, 251, 207);
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.friendName {
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  margin-left: 20px;
+}
