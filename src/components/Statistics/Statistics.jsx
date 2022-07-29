@@ -21,8 +21,6 @@ export function Stats(props) {
 }
 
 Stats.propTypes = {
-  list: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-  }),
+  userStats: PropTypes.array,
   title: PropTypes.string,
 };

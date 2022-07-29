@@ -1,4 +1,4 @@
-import { FriendListItem } from './FriendsListItem';
+import { FriendListItem } from '../FriendsListItem/FriendsListItem';
 
 export function FriendList(props) {
   const friends = props.userFriends.map(friend => (

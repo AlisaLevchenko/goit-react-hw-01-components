@@ -24,10 +24,12 @@ export function TransactionHistory(props) {
   );
 }
 TransactionHistory.propTypes = {
-  transactions: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    type: PropTypes.string.isRequired,
-    amount: PropTypes.string.isRequired,
-    currency: PropTypes.string.isRequired,
-  }),
+  userTransact: PropTypes.array,
 };
+
+//   {
+//   id: PropTypes.string.isRequired,
+//   type: PropTypes.string.isRequired,
+//   amount: PropTypes.string.isRequired,
+//   currency: PropTypes.string.isRequired,
+// },
